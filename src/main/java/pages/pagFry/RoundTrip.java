@@ -55,7 +55,7 @@ public class RoundTrip {
 				}
 			}catch(NoSuchElementException e) {System.out.println(e);}
 		}
-		System.out.println("Length is "+i);
+		System.out.println("Length is  "+i);
 	}
 
 }
