@@ -35,7 +35,7 @@ public class FlightPage {
 	public List<WebElement> roundListSize() throws InterruptedException{
 		WebDriverWait wait= new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class,'row legsContainer')]//div[1]//nav[1]//ul[1]//li[1]//div[1]//label[1]//table[1]//tbody[1]//tr[1]//th[6]")));
-		//	Thread.sleep(30000);
+		Thread.sleep(30000);
 		return roundList;
 
 	}
