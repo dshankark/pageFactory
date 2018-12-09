@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+   <Properties>
+    <Property name="basePath">C:\Users\Shankar Kumar\eclipse-workspace\Framework\logger</Property>
+  </Properties>
+ 
+   <RollingFile name="file" fileName="logger/logs.log"
+                       filePattern="${basepath}/%d{HH-mm-ss.SSS}-%d{yyyy-mm-dd}.log">
+            <PatternLayout>
+              <pattern>"%d{HH:mm:ss.SSS} %d{yyyy-mm-dd} [%t] %-5level %logger{36} - %msg%n"</pattern>
+            </PatternLayout>
+            <SizeBasedTriggeringPolicy size="500" />
+          </RollingFile>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+  </Appenders>
+  <Loggers>
+    <Root level="Trace">
+      <AppenderRef ref="file"/>
+    </Root>
+  </Loggers>
+</Configuration>

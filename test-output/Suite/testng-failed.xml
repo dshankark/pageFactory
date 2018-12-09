@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="pages.pagFry.ExtRep"/>
+  </listeners>
+  <test name="Test(failed)">
+    <groups>
+      <run>
+        <include name="full"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="pages.pagFry.RoundTrip">
+        <methods>
+          <include name="roundFlightView"/>
+        </methods>
+      </class> <!-- pages.pagFry.RoundTrip -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
