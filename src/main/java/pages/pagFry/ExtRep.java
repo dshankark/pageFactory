@@ -11,6 +11,7 @@ import org.testng.ISuite;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.annotations.BeforeTest;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -20,6 +21,7 @@ public class ExtRep implements ITestListener{
 	public WebDriver driver;
 	public static ExtentReports reports;
 	public static ExtentTest test;
+
 	public void onFinish(ITestContext arg0) {
 		// TODO Auto-generated method stub
 		System.out.println("Test Ends");
@@ -27,7 +29,7 @@ public class ExtRep implements ITestListener{
 		reports.flush();
 
 	}
-
+	@BeforeTest
 	public void onStart(ITestContext context) {
 		// TODO Auto-generated method stub
 		System.out.println("Start the Test");

@@ -12,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.annotations.BeforeTest;
 
 public class ReportsITL implements ITestListener{
 	WebDriver driver;
@@ -23,6 +24,7 @@ public class ReportsITL implements ITestListener{
 
 	}
 
+	@BeforeTest
 	public void onStart(ITestContext arg0) {
 		// TODO Auto-generated method stub
 
