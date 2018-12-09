@@ -1,0 +1,15 @@
+# Created at 2018-10-27T11:30:16.736
+WARNING: An illegal reflective access operation has occurred
+
+# Created at 2018-10-27T11:30:16.954
+WARNING: Illegal reflective access by org.apache.poi.util.DocumentHelper (file:/C:/Users/Shankar%20Kumar/.m2/repository/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17.jar) to method com.sun.org.apache.xerces.internal.util.SecurityManager.setEntityExpansionLimit(int)
+
+# Created at 2018-10-27T11:30:16.964
+WARNING: Please consider reporting this to the maintainers of org.apache.poi.util.DocumentHelper
+
+# Created at 2018-10-27T11:30:16.979
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created at 2018-10-27T11:30:17.031
+WARNING: All illegal access operations will be denied in a future release
+
