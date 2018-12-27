@@ -1,34 +1,20 @@
 package pages.pagFry;
 
-import java.io.File;
-import java.io.IOException;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 /**
  * Hello world!
  *
  */
-public class App extends Browser{
-	WebDriver driver;
-	{
-		TakesScreenshot ss= ((TakesScreenshot)driver);
-		File Srcfile= ss.getScreenshotAs(OutputType.FILE);
-		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("mm-dd-yyyy_hh:mm:ss");
-		LocalDateTime now = LocalDateTime.now();
-		String dt= dtf.format(now);
-
-		File destfile= new File("C://SS"+dt+".png");
-		try {
-			FileUtils.copyFile(Srcfile, destfile);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+public class App{
+	public WebDriver driver;
+	public void temp(){
+		System.setProperty("webdriver.chrome.driver","c://Chrome//chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://www.google.com/");
+		Assert.assertTrue(false);
+		System.out.println("Next statment");
 
 	}}
