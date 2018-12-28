@@ -5,8 +5,10 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(ExtRep.class)
 public class OneWay {
 
 	WebDriver driver;
@@ -16,7 +18,7 @@ public class OneWay {
 	public void browser() {
 		Browser br= new Browser();
 		driver = br.setBrowser();
-
+		System.out.println("NEW ONE OF SHANKAR");
 	}
 
 	@Test(priority=1, groups= {"one_way"})

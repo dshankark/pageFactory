@@ -8,7 +8,7 @@
   
    <groups>
         <define name="full">
-        
+           <include name ="one_way"/>
            <include name ="two_way"/>
          </define>
      <run>
